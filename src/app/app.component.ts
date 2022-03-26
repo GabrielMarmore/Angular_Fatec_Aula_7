@@ -20,5 +20,9 @@ export class AppComponent {
 
   criarTarefas() {
     this.tarefas.push(this.tarefa);
+    this.limparInput();
+  }
+  limparInput() {
+    this.tarefa = '';
   }
 }
