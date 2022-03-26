@@ -20,6 +20,7 @@ export class AppComponent {
 
   criarTarefas() {
     this.tarefas.push(this.tarefa);
+    localStorage.setItem("tarefa"+this.tarefas.length, this.tarefa);
     this.limparInput();
   }
   limparInput() {
